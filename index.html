@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/vue@2.6.14/dist/vue.js"></script>
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/Desktop/Navbar.css">
+    <link rel="stylesheet" href="styles/Desktop/Section.hero.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" 
+    integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" 
+    crossorigin="anonymous">
+    <title>RoyalVillas</title>
+</head>
+<body>
+    <div id="app">
+        <div class="nav-container">
+            <header class="navigation">
+                <figure>
+                    <img src="images/logo.jpg" alt="">
+                </figure>
+            </header>
+        </div>
+        <section class="container-hero">
+            <div class="section-welcome">
+                <h3>{{ props.tinyTitle }}</h3>
+                <h1>{{ props.mainTitle }}</h1>
+                <p class="pr-roboto">{{ props.paragraph }}</p>
+                <br>
+                <p class="pr-roboto-reg">{{ props.paragraphTwo }}</p>
+                <br>
+                <p class="pr-roboto-reg">{{ props.paragraphThree }}</p>
+                <div class="btns-area">
+                    <a class="red-button" href="#">{{ btn.lm }}</a>
+                    <a class="gold-button" href="#">{{ btn.vall }}</a>
+                </div>
+            </div>
+            <div class="articles-container">
+                <article v-for="(item, index) in users" class="article-content">
+                    <figure>
+                        <img :src="users[index].imgurl" alt="profile">
+                    </figure>
+                    <h1>{{ item.name }}</h1>
+                    <p>{{ item.ocupation}}</p>
+                    <div class="social-net">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                    <a class="red-button" href="">{{ btn.gt }}</a>
+                </article>
+            </div>
+        </section>
+        <footer class="footer-hero"></footer>
+    </div>
+</body>
+    <script src="js/index.js"></script>
+</html>

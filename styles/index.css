@@ -1,0 +1,59 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Lato-Black';
+    src: url('../fonts/Lato/Lato-Black.ttf');
+}
+@font-face {
+    font-family: 'Merriweather-Bold';
+    src: url('../fonts/Merriweather/Merriweather-Bold.ttf');
+}
+@font-face {
+    font-family: 'PT_Serif-BoldItalic';
+    src: url('../fonts/PT_Serif/PTSerif-BoldItalic.ttf');
+}
+@font-face {
+    font-family:'PT_Serif-Bold';
+    src: url('../fonts/PT_Serif/PTSerif-Bold.ttf');
+}
+@font-face {
+    font-family: 'Roboto-Medium';
+    src: url('../fonts/Roboto/Roboto-Medium.ttf');
+}
+@font-face {
+    font-family: 'Roboto-Regular';
+    src: url('../fonts/Roboto/Roboto-Regular.ttf');
+}
+:root{
+
+    /** Colors **/
+    --primaryColor: #F6F0DD;
+    --secondaryColor:#F7F7F7;
+    --tertiaryColor: #F46660;
+    --quaternaryColor: #D2CFC0;
+    --sixthColor: #9e9d9d;
+
+    /** Fonts **/
+    --latoBlack: 'Lato-Black';
+    --merriBold: 'Merriweather-Bold';
+    --ptSerif:  'PT_Serif-BoldItalic';
+    --ptBold: 'PT_Serif-Bold';
+    --robotoMedium: 'Roboto-Medium';
+    --robotoRegular: 'Roboto-Regular';
+}
+
+section, header{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+@media screen and (max-width:480px){
+    section, header, footer {
+        max-width: 480px;
+        margin: 0 auto;
+    }
+}
