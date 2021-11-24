@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="styles/index.css">
     <link rel="stylesheet" href="styles/Desktop/Navbar.css">
     <link rel="stylesheet" href="styles/Desktop/Section.hero.css">
+    <link rel="stylesheet" href="styles/Desktop/Modal.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" 
     integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" 
     crossorigin="anonymous">
@@ -15,6 +16,7 @@
 </head>
 <body>
     <div id="app">
+
         <div class="nav-container">
             <header class="navigation">
                 <figure>
@@ -22,6 +24,7 @@
                 </figure>
             </header>
         </div>
+        
         <section class="container-hero">
             <div class="section-welcome">
                 <h3>{{ props.tinyTitle }}</h3>
@@ -32,7 +35,7 @@
                 <br>
                 <p class="pr-roboto-reg">{{ props.paragraphThree }}</p>
                 <div class="btns-area">
-                    <a class="red-button" href="#">{{ btn.lm }}</a>
+                    <button class="trigger red-button" >{{ btn.lm }}</button>
                     <a class="gold-button" href="#">{{ btn.vall }}</a>
                 </div>
             </div>
@@ -42,7 +45,7 @@
                         <img :src="users[index].imgurl" alt="profile">
                     </figure>
                     <h1>{{ item.name }}</h1>
-                    <p>{{ item.ocupation}}</p>
+                    <p>{{ item.ocupation }}</p>
                     <div class="social-net">
                         <a href="#"><i class="fab fa-facebook-f"></i></a>
                         <a href="#"><i class="fab fa-twitter"></i></a>
@@ -52,7 +55,26 @@
                 </article>
             </div>
         </section>
+
         <footer class="footer-hero"></footer>
+
+        <!--    Modal Logic    -->
+        <div class="modal-container">
+            <div class="modal-content">
+                <button class="close-button" >x</button>
+                <div class="form">
+                    <h1>{{ props.formTitle }}</h1>
+                    <p>{{ props.formDescription }}</p>
+                    <form class="form-content" action="">
+                        <input type="text" placeholder="Name">
+                        <input type="email" placeholder="Email">
+                        <textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
+                        <button class="red-button">{{ btn.formButton }}</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
     </div>
 </body>
     <script src="js/index.js"></script>
