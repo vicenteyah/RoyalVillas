@@ -12,12 +12,12 @@
 
 .modal-content{
     position: absolute;
-    top: 35%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: #fff;
-    width: 25%;
-    height: 55%;
+    max-width: 500px;
+    max-height: 700px;
     padding: 10px;
     box-sizing: border-box;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
@@ -25,6 +25,11 @@
 
 .form{
     padding: 20px 10px;
+}
+.close-button{
+    position: absolute;
+    top: -32px;
+    right: 0px;
 }
 .form h1{
     font-family: var(--ptBold);
