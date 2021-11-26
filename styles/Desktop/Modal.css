@@ -30,6 +30,7 @@
     position: absolute;
     top: -32px;
     right: 0px;
+    border: none;
 }
 .form h1{
     font-family: var(--ptBold);

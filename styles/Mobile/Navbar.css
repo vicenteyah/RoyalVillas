@@ -1,0 +1,30 @@
+@media screen and (max-width: 480px) {
+
+    .nav-container{
+        max-width: 480px;
+        padding: 0;
+    }
+
+
+    .container-hero{
+        flex-direction: column;
+        padding: 20px 0px;
+        gap: 0px;
+    }
+    .btns-area{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px
+    }
+
+    .articles-container{
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 0px;
+        gap: 50px
+    }
+
+    .footer-hero{
+        max-width: 480px;
+    }
+}
